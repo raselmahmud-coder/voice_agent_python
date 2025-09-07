@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: livekit-agent
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: LIVEKIT_URL
+        sync: false
+      - key: LIVEKIT_API_KEY
+        sync: false
+      - key: LIVEKIT_API_SECRET
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: DEEPGRAM_API_KEY
+        sync: false
+      - key: CARTESIA_API_KEY
+        sync: false
